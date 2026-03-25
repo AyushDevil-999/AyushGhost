@@ -1,65 +1,88 @@
-# AyushGhost v6.1 (Ghost control andoid)
+# AyushGhost v9.0 (Ultra-Stealth Android Control)
 
-AyushGhost ek powerful PHP-based tool hai jo automated payload generation aur tunneling (Cloudflare) provide karta hai. Iska use ethical hacking aur security testing ke liye kiya jata hai.
-🛠️ Installation & Setup
+AyushGhost ek advance Python-based automated tool hai jo Android penetration testing aur educational security research ke liye banaya gaya hai. Ye tool automatic payload generation, stealth signing, aur Cloudflare tunneling provide karta hai.
+🚀 Features
 
-Pehle terminal open karein aur niche diye gaye commands ko ek-ek karke paste karein:
+ App Binder Mode: 50+ popular apps (Instagram, CapCut, etc.) ke saath masking.
+
+ Auto-Tunneling: Cloudflare ke zariye global link generation.
+
+Stealth Build: Anti-delete aur auto-hide icon features ke saath APK generation.
+
+ One-Click Listener: Metasploit handler ka automatic setup.
+
+# 🚀 How to Use
+
+Pehle apna terminal (Termux ya Kali) open karein aur niche di gayi commands ko ek-ek karke paste karein:
 Bash
 
+# System Update
+    pkg update && pkg upgrade -y
 
-🚀 How to Use
-    # Repository clone karein:
+# Install Dependencies
+    pkg install python python-pip git msfconsole cloudflared -y
 
+# Repository Clone Karein
     git clone https://github.com/azadproduction212-cyber/AyushGhost.git
 
-# Directory mein jayein:
+# Directory Mein Jayein
+    cd AyushGhost
 
-     cd AyushGhost
-
-# Permissions allow karein:
-
+# Permissions Allow Karein
     chmod +x *
 
-# Tool run karein:
-
-    php AyushGhost.php
 
 
-# Tool start hone ke baad
-[1] Deploy option select karein.
+Tool ko start karne ke liye ye command chalayein:
+Bash
 
-Cloudflare link generate hone tak wait karein.
+    python3 AyushGhost.py
 
- Apna LHOST (Ngrok TCP link ya Local IP) aur LPORT enter karein.
+ Execution Steps:
 
-Payload pub/ folder mein System_Update.apk naam se save ho jayega.
+ [01] Launch AyushGhost: Attack shuru karne ke liye option 1 select karein.
 
- Victim ko link bhejein, download hote hi listener start karein.
+ Mode Select: Normal link ya App Binder (Masking) mode chuno.
 
-# ⚠️ Common Errors & Fixes
+ App Choice: Agar Binder mode hai, toh list mein se koi bhi popular app select karein.
 
-Agar tool chalne mein koi dikat aaye, toh ye try karein:
+ Configuration: Apna LHOST (Local IP/127.0.0.1) aur LPORT (e.g., 4444) enter karein.
 
-Cloudflared Not Found: Agar link generate nahi ho raha, toh check karein ki cloudflared install hai ya nahi.
+Deployment: Cloudflare link generate hone tak wait karein aur link victim ko bhejein.
 
-# Fix:(kali)
-    sudo dpkg -i cloudflared.deb 
- # Fix (termux)
-    pkg install cloudflared 
+Control: Jaise hi victim install karega, aapka Meterpreter Session auto-start ho jayega.
+    🛠️ Installation & Setup
 
- MSFVenom Error: Agar APK build nahi ho rahi.
 
-Fix: Check karein ki Metasploit installed hai. msfvenom -v type karke check karein.
 
- Permission Denied: Agar "Permission Denied" aaye.
+⚠️ Common Errors & Fixes
 
-       chmod +x AyushGhost.php
+ Cloudflared Not Found: Agar link generate nahi ho raha:
 
- Port 8080 Busy: Agar server start nahi ho raha karke purane process band karein.
+Termux:
+    
+    pkg install cloudflared
 
-         pkill -f php
+Kali Linux: 
+    
+        sudo apt install cloudflared
+
+MSFVenom Error: Agar APK build nahi ho rahi:
+
+ Check karein ki Metasploit install hai:
         
+        msfvenom -v
 
+Termux mein storage allow karein: 
+        
+        termux-setup-storage
 
-# ⚠️Disclaimer:
-Yeh tool sirf educational purposes ke liye hai. Kisi bhi illegal activity ke liye author zimmedar nahi hoga.
+Port 8080 Busy: Agar server start nahi ho raha, toh purane processes band karein:
+
+Fix: Tool mein option [02] Purge Logs select karein ya command chalayein:
+        
+        pkill -f python3
+
+⚠️ Disclaimer
+
+Yeh tool sirf Educational Purposes aur ethical security testing ke liye hai. Kisi bhi illegal activity ke liye author ya "AyushGhost" zimmedar nahi hoga. Hamesha ethical rahein!
