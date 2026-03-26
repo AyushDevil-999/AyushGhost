@@ -13,7 +13,7 @@ Stealth Build: Anti-delete aur auto-hide icon features ke saath APK generation.
 
  One-Click Listener: Metasploit handler ka automatic setup.
 
-# 🚀 How to Use
+# 🚀 How to Use ( for termux )
 
 Pehle apna terminal (Termux ya Kali) open karein aur niche di gayi commands ko ek-ek karke paste karein:
 Bash
@@ -21,7 +21,7 @@ Bash
 # System Update
     pkg update && pkg upgrade -y
 
-# Install Dependencies
+# Install Dependencies (kali/termux)
     pkg install python python-pip git msfconsole cloudflared -y
 
 # Repository Clone Karein
