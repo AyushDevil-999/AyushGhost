@@ -21,10 +21,10 @@ Bash
 # System Update
     pkg update && pkg upgrade -y
 
-# Install Dependencies (kali/termux)
+# Install Dependencies 
     pkg install python python-pip git msfconsole cloudflared -y
 
-# Repository Clone Karein
+# Repository Clone Karein (kali/termux)
     git clone https://github.com/AyushDevil-999/AyushGhost.git
 # Directory Mein Jayein
     cd AyushGhost
